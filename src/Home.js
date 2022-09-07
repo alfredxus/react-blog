@@ -2,7 +2,7 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-  const { data: blogs, loading, error } = useFetch("http://blogapi-env-1.eba-bvpkafzm.us-west-1.elasticbeanstalk.com/blogs/sortByTimeCreatedDesc/");
+  const { data: blogs, loading, error } = useFetch("https://blogapi-env-1.eba-bvpkafzm.us-west-1.elasticbeanstalk.com/blogs/sortByTimeCreatedDesc/");
 
   return (
     <div className="home">
