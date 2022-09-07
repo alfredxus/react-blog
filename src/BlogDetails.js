@@ -4,11 +4,11 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const { data: blog, loading, error } = useFetch("http://blogapi-env-1.eba-bvpkafzm.us-west-1.elasticbeanstalk.com/blogs/" + id);
+  const { data: blog, loading, error } = useFetch("https://blogapi-env-1.eba-bvpkafzm.us-west-1.elasticbeanstalk.com/blogs/" + id);
   const navigate = useNavigate();
 
   const handleClick = () => {
-    fetch("http://blogapi-env-1.eba-bvpkafzm.us-west-1.elasticbeanstalk.com/blogs?id=" + blog.id, {
+    fetch("https://blogapi-env-1.eba-bvpkafzm.us-west-1.elasticbeanstalk.com/blogs?id=" + blog.id, {
       method: "DELETE"
     }).then(() => {
       navigate('/');
