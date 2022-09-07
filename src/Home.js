@@ -2,7 +2,7 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-  const { data: blogs, loading, error } = useFetch("/blogs/sortByTimeCreatedDesc/");
+  const { data: blogs, loading, error } = useFetch('/blogs/sortByTimeCreatedDesc/');
 
   return (
     <div className="home">
