@@ -11,9 +11,6 @@ const useFetch = (url) => {
 
     fetch(url, opts)
       .then((res) => {
-        if (!res.ok) {
-          throw Error("could not fetch data from database");
-        }
         return res.json();
       })
       .then((data) => {
