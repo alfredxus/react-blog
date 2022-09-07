@@ -14,7 +14,7 @@ const Create = () => {
 
         setLoading(true);
 
-        fetch('https://blogapi-env-1.eba-bvpkafzm.us-west-1.elasticbeanstalk.com/blogs', {
+        fetch('http://blogapi-env-1.eba-bvpkafzm.us-west-1.elasticbeanstalk.com/blogs', {
             method: 'POST',
             headers: { "Content-Type": "application/json"},
             body: JSON.stringify(blog)
